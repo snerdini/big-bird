@@ -1,5 +1,5 @@
 BigBird::Application.routes.draw do
-  get "users/new"
+  get 'users/new'
 
   # Define static page routes
   root to: 'static_pages#home'
