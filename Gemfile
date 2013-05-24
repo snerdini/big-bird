@@ -9,6 +9,7 @@ gem 'bootstrap-sass'
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails'
+  gem 'spork'
 end
 
 group :development do
