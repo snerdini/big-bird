@@ -6,6 +6,6 @@ require File.expand_path('../config/application', __FILE__)
 require 'rspec/core/rake_task'
 
 BigBird::Application.load_tasks
-RSpec::Core::RakeTask.new(:spec)
-
-task :rspec => :spec
+#RSpec::Core::RakeTask.new(:spec)
+#
+#task :rspec => :spec
