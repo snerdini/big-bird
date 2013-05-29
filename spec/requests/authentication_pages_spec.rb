@@ -30,7 +30,7 @@ describe 'Authentication' do
       before do
         fill_in 'Email',        with: user.email.upcase
         fill_in 'Password',     with: user.password
-        click_button('Sign in')
+        click_button 'Sign in'
       end
 
       it { should have_selector('title', text: user.name) }
