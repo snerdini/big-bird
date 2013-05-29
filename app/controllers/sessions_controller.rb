@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  # Test comment for push
+  # Test comment for push again
   def new
 
   end
