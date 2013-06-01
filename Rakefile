@@ -9,3 +9,5 @@ BigBird::Application.load_tasks
 #RSpec::Core::RakeTask.new(:spec)
 #
 #task :rspec => :spec
+
+puts "##teamcity[buildNumber '0.9.{build.number}']"
