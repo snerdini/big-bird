@@ -10,4 +10,6 @@ BigBird::Application.load_tasks
 #
 #task :rspec => :spec
 
-puts "##teamcity[buildNumber '0.9.{build.number}']"
+task :set_build_number do
+  puts "##teamcity[buildNumber '0.9.1.{build.number}']"
+end
