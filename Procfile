@@ -1,1 +1,1 @@
-web: bundle exec unicorn -p $PORT -E $RACK_ENV
+web: bundle exec passenger start -p $PORT --max-pool-size 3 --environment production
