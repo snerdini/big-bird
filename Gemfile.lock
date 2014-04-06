@@ -33,8 +33,7 @@ GEM
       rake (>= 0.8.7)
     arel (3.0.3)
     bcrypt-ruby (3.0.1)
-    bootstrap-sass (3.1.1.0)
-      sass (~> 3.2)
+    bootstrap-sass (2.1.0.0)
     builder (3.0.4)
     capybara (1.1.2)
       mime-types (>= 1.16)
@@ -82,7 +81,6 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
-    kgio (2.9.2)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -121,7 +119,6 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    raindrops (0.13.0)
     rake (10.2.2)
     rdoc (3.12.2)
       json (~> 1.4)
@@ -165,10 +162,6 @@ GEM
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.8.2)
-      kgio (~> 2.6)
-      rack
-      raindrops (~> 0.7)
     websocket (1.0.7)
     xpath (0.1.4)
       nokogiri (~> 1.3)
@@ -179,7 +172,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   bcrypt-ruby (~> 3.0.0)
-  bootstrap-sass
+  bootstrap-sass (= 2.1)
   capybara (= 1.1.2)
   coffee-rails (~> 3.2.1)
   cucumber-rails (= 1.2.1)
@@ -194,4 +187,3 @@ DEPENDENCIES
   spork
   sqlite3 (= 1.3.5)
   uglifier (>= 1.0.3)
-  unicorn
