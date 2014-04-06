@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'bootstrap-sass'
-gem 'bcrypt-ruby'
+gem 'bcrypt-ruby', '~>3.0.0'
 #gem 'strong_parameters'
 
 # Bundle edge Rails instead:
@@ -10,7 +10,7 @@ gem 'bcrypt-ruby'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '2.11.0'
   gem 'spork'
 end
 
@@ -20,7 +20,9 @@ end
 
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '4.1.0'
+  gem 'cucumber-rails', '1.2.1', :require => false
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
@@ -54,7 +56,7 @@ gem 'jquery-rails'
 gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+#gem 'capistrano'
 
 gem 'passenger'
 
