@@ -34,6 +34,8 @@ GEM
     arel (3.0.3)
     bcrypt-ruby (3.0.1)
     bootstrap-sass (2.1.0.0)
+    bootstrap-will_paginate (0.0.6)
+      will_paginate
     builder (3.0.4)
     capybara (1.1.2)
       mime-types (>= 1.16)
@@ -71,9 +73,13 @@ GEM
     factory_girl_rails (4.1.0)
       factory_girl (~> 4.1.0)
       railties (>= 3.0.0)
+    faker (1.0.1)
+      i18n (~> 0.4)
     ffi (1.9.3)
     gherkin (2.12.2)
       multi_json (~> 1.3)
+    haml (4.0.5)
+      tilt
     hike (1.2.3)
     i18n (0.6.9)
     journey (1.0.4)
@@ -135,7 +141,7 @@ GEM
       activesupport (>= 3.0)
       railties (>= 3.0)
       rspec (~> 2.11.0)
-    rubyzip (1.1.2)
+    rubyzip (1.1.3)
     sass (3.3.4)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -163,6 +169,7 @@ GEM
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     websocket (1.0.7)
+    will_paginate (3.0.3)
     xpath (0.1.4)
       nokogiri (~> 1.3)
 
@@ -173,11 +180,14 @@ DEPENDENCIES
   annotate
   bcrypt-ruby (~> 3.0.0)
   bootstrap-sass (= 2.1)
+  bootstrap-will_paginate (= 0.0.6)
   capybara (= 1.1.2)
   coffee-rails (~> 3.2.1)
   cucumber-rails (= 1.2.1)
   database_cleaner (= 0.7.0)
   factory_girl_rails (= 4.1.0)
+  faker (= 1.0.1)
+  haml (~> 4.0.5)
   jquery-rails
   passenger
   pg (= 0.12.2)
@@ -187,3 +197,4 @@ DEPENDENCIES
   spork
   sqlite3 (= 1.3.5)
   uglifier (>= 1.0.3)
+  will_paginate (= 3.0.3)

@@ -1,0 +1,8 @@
+#content
+  %div.test= @myVar
+
+  %ul
+    - @users.each do |user|
+      %li= user.name
+
+  #foo(title=@myVar class="bar") This is my div content
