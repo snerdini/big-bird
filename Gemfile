@@ -63,7 +63,8 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 #gem 'capistrano'
 
-gem 'passenger'
+#gem 'passenger'
+gem 'puma'
 
 # To use debugger
 # gem 'debugger'
