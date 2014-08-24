@@ -1,1 +1,1 @@
-web: bundle exec passenger start -p $PORT --max-pool-size 3 --environment production
+web: bundle exec puma -C config/puma.rb
