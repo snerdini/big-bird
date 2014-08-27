@@ -28,6 +28,10 @@ class User < ActiveRecord::Base
   validates :password, presence: true, length: { minimum: 6 }
   validates :password_confirmation, presence: true
 
+  def self.all_cached
+    Rails.cache.fetch('User.all') { all }
+  end
+
   private
 
     def create_remember_token
