@@ -15,6 +15,7 @@ class User < ActiveRecord::Base
   #include ActiveModel::ForbiddenAttributesProtection
   attr_accessible :email, :name, :password, :password_confirmation
   has_secure_password
+  has_many :microposts
 
   before_save :create_remember_token
   before_save { email.downcase! }
