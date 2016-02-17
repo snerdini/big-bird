@@ -16,8 +16,9 @@ gem 'dalli'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'rspec-rails', '~> 3.0'
-  gem 'spork'
+  gem 'rspec-rails', '2.13.1'
+  #gem 'rspec-its'
+  #gem 'spork'
 end
 
 # group :development do
@@ -25,10 +26,11 @@ end
 # end
 
 group :test do
-  gem 'capybara', '1.1.2'
-  gem 'factory_girl_rails', '4.6.0'
-  gem 'cucumber-rails', '1.2.1', :require => false
-  gem 'database_cleaner', '0.7.0'
+  gem 'test-unit'
+  gem 'capybara', '2.1.0'
+  gem 'factory_girl_rails', '4.2.0'
+  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 group :production do
