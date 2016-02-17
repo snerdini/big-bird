@@ -15,9 +15,4 @@ class StaticPagesController < ApplicationController
     @myVar = 'HAML rox!'
     @users = User.all_cached
   end
-
-  def foo2
-    @myVar = 'Slim rox!'
-    @users = User.all
-  end
 end

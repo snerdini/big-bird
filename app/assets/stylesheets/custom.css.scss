@@ -1,5 +1,5 @@
+@import "bootstrap-sprockets";
 @import "bootstrap";
-@import "bootstrap-responsive";
 
 $grayMediumLight: #eaeaea;
 
@@ -52,7 +52,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: $gray-light;
 }
 
 p {
@@ -69,9 +69,7 @@ p {
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
   font-weight: bold;
-  line-height: 1;
 
   &:hover {
     color: white;
@@ -85,12 +83,12 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  color: $gray-light;
 
   a {
     color: $gray;
     &:hover {
-      color: $grayDarker;
+      color: $gray-darker;
     }
   }
 
@@ -114,7 +112,7 @@ footer {
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid $gray-lighter;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -162,8 +160,8 @@ input {
 }
 
 .field_with_errors {
-  @extend .control-group;
-  @extend .error;
+  @extend .control-group !optional;
+  @extend .error !optional;
 }
 
 /* miscellaneous */
@@ -184,9 +182,9 @@ input {
   li {
     overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid $gray-lighter;
     &:last-child {
-      border-bottom: 1px solid $grayLighter;
+      border-bottom: 1px solid $gray-lighter;
     }
   }
 }

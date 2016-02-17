@@ -5,16 +5,16 @@ BigBird::Application.routes.draw do
   # Define static page routes
   root to: 'static_pages#home'
 
-  match '/signup', to: 'users#new'
-  match '/signin', to: 'sessions#new'
-  match '/signout', to: 'sessions#destroy', :via => :delete
+  get '/signup', to: 'users#new'
+  get '/signin', to: 'sessions#new'
+  post '/signout', to: 'sessions#destroy', :via => :delete
 
-  match '/help', to: 'static_pages#help'
-  match '/about', to: 'static_pages#about'
-  match '/contact', to: 'static_pages#contact'
+  get '/help', to: 'static_pages#help'
+  get '/about', to: 'static_pages#about'
+  get '/contact', to: 'static_pages#contact'
 
-  match '/foo', to: 'static_pages#foo'
-  match '/foo2', to: 'static_pages#foo2'
+  get '/foo', to: 'static_pages#foo'
+  get '/foo2', to: 'static_pages#foo2'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

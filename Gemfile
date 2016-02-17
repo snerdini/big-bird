@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.2.4'
 
-gem 'rails', '3.2.11'
-gem 'bootstrap-sass', '2.1'
+gem 'rails', '4.2.5.1'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bcrypt-ruby', '~>3.0.0'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
@@ -15,18 +15,18 @@ gem 'dalli'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.5'
-  gem 'rspec-rails', '2.11.0'
+  gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0'
   gem 'spork'
 end
 
-group :development do
-  gem 'annotate'
-end
+# group :development do
+#   gem 'annotate'
+# end
 
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'factory_girl_rails', '4.1.0'
+  gem 'factory_girl_rails', '4.6.0'
   gem 'cucumber-rails', '1.2.1', :require => false
   gem 'database_cleaner', '0.7.0'
 end
@@ -39,8 +39,8 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails', '>= 3.2'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -48,7 +48,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# gem 'protected_attributes'
 gem 'jquery-rails'
+gem 'mongoid', '~> 5.1.0'
 
 # Set up auth requirements
 #gem 'devise'
